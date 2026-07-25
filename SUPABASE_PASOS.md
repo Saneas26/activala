@@ -1,10 +1,10 @@
-# CasActiva · Pasos de Supabase (formulario de interesados)
+# Activala · Pasos de Supabase (formulario de interesados)
 
 Como siempre: tú pegas, la web queda conectada. Tu correo **jamás** aparece en el código.
 
 ## 1. Crear el proyecto
 1. supabase.com → **New project** en la organización de siempre.
-2. Nombre: `casactiva` · Región: `eu-west` (la más cercana) · Contraseña de base: guárdala en tu gestor.
+2. Nombre: `activala` · Región: `eu-west` (la más cercana) · Contraseña de base: guárdala en tu gestor.
 3. Cuando termine de crear, apunta dos cosas de **Settings → API**:
    - **Project URL** (ej. `https://abcd1234.supabase.co`)
    - **Publishable key** (la `anon`/publishable; es pública por diseño)
@@ -30,9 +30,9 @@ En **Edge Functions → Secrets** (o Settings → Edge Functions):
 | `INTERESADOS_EMAIL` | Tu correo, el que recibirá los avisos |
 
 ## 5. Resend
-1. resend.com → **Domains → Add domain** → `casactiva.es`.
+1. resend.com → **Domains → Add domain** → `activala.es`.
 2. Añade en Cloudflare (DNS del dominio) los registros que te dé Resend y verifica.
-3. El remitente que usa la función es `CasActiva <app@casactiva.es>`.
+3. El remitente que usa la función es `Activala <app@activala.es>`.
    - Mientras el dominio no esté verificado, puedes probar cambiando el `from`
      de la función a un dominio ya verificado del grupo.
 
@@ -49,6 +49,6 @@ const SUPABASE_KEY = 'sb_publishable_...';
 ## 7. Probar
 1. Abre la web, rellena el formulario y envía.
 2. **Table Editor → interesados**: tiene que aparecer la fila.
-3. Tu correo: tiene que llegar el aviso «CasActiva · nuevo propietario: …».
+3. Tu correo: tiene que llegar el aviso «Activala · nuevo propietario: …».
 4. Comprueba que desde el navegador NO se puede leer la tabla
    (la web solo inserta; select/update/delete están denegados por RLS).

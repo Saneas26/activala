@@ -1,5 +1,5 @@
 // ============================================================
-// CasActiva · Edge Function: avisar-interesado
+// Activala · Edge Function: avisar-interesado
 // Avisa por correo (Resend) cuando alguien deja el formulario de la web.
 // El correo de destino sale del secreto INTERESADOS_EMAIL: JAMÁS en el código.
 // Desplegar como Edge Function con «Enforce JWT verification» DESACTIVADO
@@ -25,7 +25,7 @@ Deno.serve(async (req) => {
       : `<tr><td><b>Meses que quiere venir</b></td><td>${esc(record.meses)}</td></tr>`;
 
     const html = `
-      <h2 style="font-family:sans-serif">Nuevo interesado en CasActiva</h2>
+      <h2 style="font-family:sans-serif">Nuevo interesado en Activala</h2>
       <table border="0" cellpadding="6" style="font-family:sans-serif;font-size:14px">
         <tr><td><b>Tipo</b></td><td>${esc(tipo)}</td></tr>
         <tr><td><b>Nombre</b></td><td>${esc(record.nombre)}</td></tr>
@@ -40,9 +40,9 @@ Deno.serve(async (req) => {
       method: 'POST',
       headers: { Authorization: `Bearer ${RESEND_API_KEY}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        from: 'CasActiva <app@casactiva.es>',
+        from: 'Activala <app@activala.es>',
         to: [DESTINO],
-        subject: `CasActiva · nuevo ${record.tipo}: ${record.nombre}`,
+        subject: `Activala · nuevo ${record.tipo}: ${record.nombre}`,
         html,
       }),
     });

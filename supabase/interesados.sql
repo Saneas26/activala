@@ -1,5 +1,5 @@
 -- ============================================================
--- CasActiva · tabla de interesados (formulario público de la web)
+-- Activala · tabla de interesados (formulario público de la web)
 -- Pegar-y-listo en el SQL Editor de Supabase. Idempotente.
 -- Patrón del grupo: tabla INSERT-ONLY para anon. Nadie puede leer,
 -- editar ni borrar desde el cliente. Los datos se ven en Table Editor.
