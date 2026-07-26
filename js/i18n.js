@@ -24,14 +24,14 @@ const I18N = {
  "v3.c": "Familia Andersson",
  "v3.e": "Cuidada todo el invierno",
  "cierre": "Así se ve una casa activa desde 3.000 km. ¿Y la tuya?",
- "a2.ante": "Sabemos por qué la tienes cerrada",
+ "a2.ante": "Sabemos por qué alquilas como alquilas",
  "a2.h": "No es por dinero. Es por miedo.",
- "a2.m1t": "Que no te la devuelvan",
- "a2.m1p": "Contratos cortos y de temporada, con la causa documentada. Nunca larga duración. Tu casa vuelve a ser tuya en la fecha que tú marcaste.",
- "a2.m2t": "Encontrarla deteriorada",
- "a2.m2p": "Entramos después de cada estancia. Si algo se rompe, lo reparamos o lo sustituimos nosotros.",
- "a2.m3t": "No saber qué pasa",
- "a2.m3p": "Vídeo y parte de tu casa después de cada rotación. Sin pedirlo y sin llamar a nadie.",
+ "a2.m1t": "A Hacienda",
+ "a2.m1p": "Alquilar sin declarar es vivir pendiente de una carta. Nosotros lo montamos todo en regla y declarado: se acabó mirar el buzón con miedo.",
+ "a2.m2t": "A que no se vayan",
+ "a2.m2p": "Contratos cortos y de temporada, con la causa documentada. Nunca larga duración. Tu casa vuelve a ser tuya en la fecha que tú marcaste.",
+ "a2.m3t": "A los líos",
+ "a2.m3p": "Inquilinos, averías, cobros, quejas: dejamos de ser tu problema. Tú solo recibes el ingreso y el parte semanal.",
  "a2.remate": "Para eso existe Activala.",
  "a3.h": "Cómo funciona",
  "a3.p1b": "1 · Nos conocemos.",
@@ -80,18 +80,18 @@ const I18N = {
  "a7.r5p": "Antes de confirmar, en su idioma. La tenemos con todos y se nota enseguida quién viene y a qué.",
  "a7.r6t": "Las mascotas las decides tú",
  "a7.r6p": "Lo marcas en tu ficha y no se discute. Es tu casa.",
- "a8.h": "Frente a una inmobiliaria",
- "a8.th1": "Una inmobiliaria",
- "a8.f1a": "Publica un anuncio",
- "a8.f1b": "Gestiona todo el ciclo de vida de tu casa",
- "a8.f2a": "Termina al entregar las llaves",
- "a8.f2b": "Sigue hasta que el inquilino se va",
- "a8.f3a": "Te habla cuando hay algo que firmar",
- "a8.f3b": "Te informa cada semana",
- "a8.f4a": "Cobra por alquilar",
- "a8.f4b": "Cobra solo cuando tu casa está activa",
+ "a8.h": "Frente a alquilar en negro",
+ "a8.th1": "Alquilando en negro",
+ "a8.f1a": "Vives pendiente del buzón",
+ "a8.f1b": "Todo declarado y en regla",
+ "a8.f2a": "Si te inspeccionan: multas, recargos y cuatro años hacia atrás",
+ "a8.f2b": "La factura fiscal real suele ser de cientos de euros al año, no miles",
+ "a8.f3a": "Sin contrato, nadie te respalda",
+ "a8.f3b": "Contrato en regla que te protege",
+ "a8.f4a": "Cobras si todo va bien",
+ "a8.f4b": "Cobras puntual y con papel",
  "a9.h": "¿Encendemos tu casa?",
- "a9.sub": "Cuéntanoslo en un minuto. Sin registro, sin datos bancarios y sin compromiso. Te contestamos en tu idioma.",
+ "a9.sub": "Cuéntanoslo en un minuto. Sin registro, sin datos bancarios y sin compromiso. Te hacemos el número de tu caso —lo que cobrarías y lo que pagarías de verdad— gratis y por escrito. El cálculo definitivo, siempre con tu asesor.",
  "f.nombre": "Nombre",
  "f.idioma": "Idioma preferido",
  "f.email": "Email",
@@ -185,7 +185,9 @@ const I18N = {
  "q6.f5a": "Nos escribes por WhatsApp y lo arreglamos nosotros. El mantenimiento está incluido en el precio.",
  "q7.h": "Dinos qué buscas.",
  "q7.sub": "Te escribimos con casas que encajan en tus fechas. Sin compromiso y sin pagar nada.",
- "meses.cortos": "Ene|Feb|Mar|Abr|May|Jun|Jul|Ago|Sep|Oct|Nov|Dic"
+ "meses.cortos": "Ene|Feb|Mar|Abr|May|Jun|Jul|Ago|Sep|Oct|Nov|Dic",
+ "ha.h1": "Alquila legal.<br><em>Duerme tranquilo.</em>",
+ "ha.lede": "Tu casa produce sin que des la cara: contratos en regla, inquilinos verificados, cobro puntual y todo declarado. <b>Y probablemente pagando mucho menos de lo que imaginas.</b>"
 },
  de: {
  "kicker": "Süden von Gran Canaria · San Bartolomé de Tirajana · Mogán",
@@ -367,7 +369,9 @@ const I18N = {
  "q6.f5a": "Sie schreiben uns per WhatsApp, und wir reparieren es. Die Instandhaltung ist im Preis inbegriffen.",
  "q7.h": "Sagen Sie uns, was Sie suchen.",
  "q7.sub": "Wir schreiben Ihnen mit Häusern, die zu Ihren Daten passen. Unverbindlich, und Sie zahlen nichts.",
- "meses.cortos": "Jan|Feb|Mär|Apr|Mai|Jun|Jul|Aug|Sep|Okt|Nov|Dez"
+ "meses.cortos": "Jan|Feb|Mär|Apr|Mai|Jun|Jul|Aug|Sep|Okt|Nov|Dez",
+ "ha.h1": "Wir vermieten keine Häuser.<br><em>Wir aktivieren Ihre Immobilie.</em>",
+ "ha.lede": "Sehen Sie jede Woche, wie Ihr Haus dasteht: <b>gereinigt, gepflegt und mit Einnahmen.</b>"
 },
  en: {
  "kicker": "South of Gran Canaria · San Bartolomé de Tirajana · Mogán",
@@ -549,7 +553,9 @@ const I18N = {
  "q6.f5a": "You message us on WhatsApp and we fix it. Maintenance is included in the price.",
  "q7.h": "Tell us what you're looking for.",
  "q7.sub": "We'll write to you with homes that fit your dates. No obligation and nothing to pay.",
- "meses.cortos": "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec"
+ "meses.cortos": "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec",
+ "ha.h1": "We don't just rent homes.<br><em>We put your property to work.</em>",
+ "ha.lede": "See how your home is doing every week: <b>clean, maintained and earning.</b>"
 },
  no: {
  "kicker": "Sør på Gran Canaria · San Bartolomé de Tirajana · Mogán",
@@ -731,7 +737,9 @@ const I18N = {
  "q6.f5a": "Du skriver til oss på WhatsApp, så ordner vi det. Vedlikehold er inkludert i prisen.",
  "q7.h": "Fortell oss hva du ser etter.",
  "q7.sub": "Vi skriver til deg med boliger som passer datoene dine. Uforpliktende, og du betaler ingenting.",
- "meses.cortos": "jan|feb|mar|apr|mai|jun|jul|aug|sep|okt|nov|des"
+ "meses.cortos": "jan|feb|mar|apr|mai|jun|jul|aug|sep|okt|nov|des",
+ "ha.h1": "Vi leier ikke bare ut boliger.<br><em>Vi aktiverer eiendommen din.</em>",
+ "ha.lede": "Se hvordan boligen din har det hver uke: <b>rengjort, vedlikeholdt og med inntekt.</b>"
 },
  sv: {
  "kicker": "Södra Gran Canaria · San Bartolomé de Tirajana · Mogán",
@@ -913,7 +921,9 @@ const I18N = {
  "q6.f5a": "Du skriver till oss på WhatsApp så lagar vi det. Underhållet ingår i priset.",
  "q7.h": "Berätta vad du söker.",
  "q7.sub": "Vi hör av oss med bostäder som passar dina datum. Utan förpliktelser och utan att betala något.",
- "meses.cortos": "jan|feb|mar|apr|maj|jun|jul|aug|sep|okt|nov|dec"
+ "meses.cortos": "jan|feb|mar|apr|maj|jun|jul|aug|sep|okt|nov|dec",
+ "ha.h1": "Vi hyr inte bara ut bostäder.<br><em>Vi aktiverar din fastighet.</em>",
+ "ha.lede": "Se hur din bostad mår varje vecka: <b>städad, underhållen och med inkomst.</b>"
 },
 };
 
