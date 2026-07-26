@@ -187,7 +187,7 @@ const I18N = {
  "q7.sub": "Te escribimos con casas que encajan en tus fechas. Sin compromiso y sin pagar nada.",
  "meses.cortos": "Ene|Feb|Mar|Abr|May|Jun|Jul|Ago|Sep|Oct|Nov|Dic",
  "ha.h1": "Alquila legal.<br><em>Duerme tranquilo.</em>",
- "ha.lede": "Tu casa produce sin que des la cara: contratos en regla, inquilinos verificados, cobro puntual y todo declarado. <b>Y probablemente pagando mucho menos de lo que imaginas.</b>"
+ "ha.lede": "Tu casa produce sin que des la cara: contratos en regla, inquilinos verificados y todo declarado. <b>Desde 300 € al mes, solo cuando está alquilada. El pago, protegido; tu contenido, también.</b>"
 },
  de: {
  "kicker": "Süden von Gran Canaria · San Bartolomé de Tirajana · Mogán",
