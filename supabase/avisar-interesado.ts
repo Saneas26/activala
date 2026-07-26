@@ -40,7 +40,8 @@ Deno.serve(async (req) => {
       method: 'POST',
       headers: { Authorization: `Bearer ${RESEND_API_KEY}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        from: 'Activala <app@activala.es>',
+        from: 'Activala <activala@saneas.es>', // dominio ya verificado en Resend (el plan Free solo admite 1)
+        reply_to: record.email,
         to: [DESTINO],
         subject: `Activala · nuevo ${record.tipo}: ${record.nombre}`,
         html,
