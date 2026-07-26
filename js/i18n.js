@@ -47,7 +47,7 @@ const I18N = {
     's2': 'Ingen bindningstid', 's3': 'Ingen exklusivitet',
     'vacia': 'Står bostaden tom betalar du ingenting',
     'promesa': 'Du får tillbaka bostaden precis som du lämnade den. Går något sönder lagar eller ersätter vi det.',
-    'v3.c': 'Från Stockholm', 'v3.e': 'Omskött hela vintern',
+    'v3.c': 'Familjen Andersson', 'v3.e': 'Omskött hela vintern',
   },
 };
 
