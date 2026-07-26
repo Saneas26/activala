@@ -1,4 +1,4 @@
-# CasActiva® · Web de marketing
+# Activala® · Web de marketing
 
 El alquiler activo del sur de Gran Canaria. Marca del grupo Saneas.
 
