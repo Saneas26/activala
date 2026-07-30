@@ -159,6 +159,11 @@ footer .logo-f sup{font-size:.65rem;font-weight:600;margin-left:1px}
 .fg-card span.tx{text-align:left}
 .fg-card b{display:block;font-size:14px;font-weight:600;color:var(--texto);line-height:1.2}
 .fg-card small{display:block;font-size:11.5px;color:var(--suave);margin-top:2px}
+.brand{display:flex;align-items:center;gap:14px}
+.gs-boton{background:none;border:0;padding:2px 6px;margin:0;cursor:pointer;text-align:left;line-height:1.15;min-height:0;border-radius:8px;font-family:"Quicksand",-apple-system,"Segoe UI",sans-serif}
+.gs-boton:hover{background:#eef6f8}
+.gs-b-marca{display:block;font-size:14px;font-weight:700;color:#3890a4}
+.gs-b-accion{display:block;font-size:11px;font-weight:700;color:#8aa3ab;letter-spacing:.04em}
 footer .copy{font-size:12px;color:#9AA7AE;margin-top:30px}
 
 :focus-visible{outline:3px solid var(--azul);outline-offset:3px}
@@ -175,6 +180,7 @@ footer .copy{font-size:12px;color:#9AA7AE;margin-top:30px}
 <body>
 
 <header class="bar">
+  <div class="brand">
   <a class="logo" href="/">
     <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true">
       <path d="M10 30 L32 10 L54 30" fill="none" stroke="#082C48" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -185,7 +191,18 @@ footer .copy{font-size:12px;color:#9AA7AE;margin-top:30px}
       <rect x="36" y="48" width="7" height="7" rx="2" fill="#54A02C"/>
     </svg>
     <span class="name">Activala<sup>®</sup></span>
-  </a>
+
+    </a>
+
+    <button type="button" class="gs-boton" onclick="GrupoSaneas.abrirMenu()" aria-label="Ver las apps del Grupo Saneas">
+
+      <span class="gs-b-marca">Grupo <b>Saneas</b> &#9656;</span>
+
+      <span class="gs-b-accion">despliega</span>
+
+    </button>
+
+    </div>
   <nav class="idiomas" aria-label="Idioma">
     <button aria-current="true" data-lang="es">ES</button><button data-lang="de">DE</button>
     <button data-lang="en">EN</button><button data-lang="no">NO</button><button data-lang="sv">SV</button>
@@ -343,36 +360,7 @@ footer .copy{font-size:12px;color:#9AA7AE;margin-top:30px}
     <a href="/privacidad.html">Privacidad</a>
   </div>
   <div class="fg-title">El grupo Saneas</div>
-  <div class="fg-grid">
-    <a class="fg-card" href="https://saneas.es" target="_blank" rel="noopener">
-      <img src="https://saneas.es/assets/img/web-saneas.png" alt="Saneas.es">
-      <span class="tx"><b>Saneas.es</b><small>Nutrición online personalizada</small></span>
-    </a>
-    <a class="fg-card" href="https://saneas.es/instala-app" target="_blank" rel="noopener">
-      <img src="https://saneas.es/assets/img/app-saneas.png" alt="APP Saneas">
-      <span class="tx"><b>APP Saneas</b><small>Tu nutrición, día a día</small></span>
-    </a>
-    <a class="fg-card" href="https://saneas.es/asesorias" target="_blank" rel="noopener">
-      <span class="fg-ico"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
-      <span class="tx"><b>Programa de Asesorías</b><small>Monta tu consulta Saneas</small></span>
-    </a>
-    <a class="fg-card" href="https://pordondevoy-saneas.vercel.app" target="_blank" rel="noopener">
-      <img src="/assets/img/app-pordondevoy.png" alt="APP Pordondevoy">
-      <span class="tx"><b>APP Pordondevoy</b><small>La nueva app del grupo</small></span>
-    </a>
-    <a class="fg-card" href="https://laora.es" target="_blank" rel="noopener">
-      <img src="/assets/img/app-laora.png?v=2" alt="laOra">
-      <span class="tx"><b>laOra</b><small>Relojería al precio honesto</small></span>
-    </a>
-    <a class="fg-card" href="/">
-      <img src="/assets/img/app-activala.png" alt="Activala">
-      <span class="tx"><b>Activala</b><small>El alquiler activo</small></span>
-    </a>
-    <a class="fg-card" href="https://acumula.es" target="_blank" rel="noopener">
-      <img src="https://saneas.es/assets/img/app-acumula.png?v=2" alt="APP Acumula">
-      <span class="tx"><b>APP Acumula</b><small>Ya disponible</small></span>
-    </a>
-  </div>
+  <div id="grupoPie"></div>
   <p class="copy">© 2026 Activala® · El alquiler activo del sur de Gran Canaria · Todos los derechos reservados</p>
 </footer>
 
@@ -453,5 +441,13 @@ document.getElementById('fInteresados').addEventListener('submit', async ev=>{
 </script>
 <script src="/js/i18n.js"></script>
 <script src="/js/telemetria.js" defer></script>
+<script src="/assets/js/grupo-saneas.js"></script>
+<script>
+GrupoSaneas.init({ actual: "activala", logos: "/assets/img/", barra: "header", extras: [
+  { id: "asesorias", nombre: "Asesora Saneas", url: "https://saneas.es/asesorias",
+    texto: "Si te gusta el mundo de la nutrici\u00f3n, ahora t\u00fa tambi\u00e9n puedes. M\u00e1s f\u00e1cil que nunca." }
+] });
+document.getElementById("grupoPie").innerHTML = GrupoSaneas.gridHTML();
+</script>
 </body>
 </html>
