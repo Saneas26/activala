@@ -1,0 +1,113 @@
+/* Estilo común de las páginas legales de activala.es.
+   Una sola hoja para las tres, en vez de repetirla en cada fichero.
+   Misma letra y misma paleta que el resto de la web. */
+
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:800;font-stretch:100%;font-display:swap;
+  src:url(/assets/fonts/bricolage-800-latin.woff2) format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:800;font-stretch:100%;font-display:swap;
+  src:url(/assets/fonts/bricolage-800-latin-ext.woff2) format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400 600;font-stretch:100%;font-display:swap;
+  src:url(/assets/fonts/plexsans-400-600-latin.woff2) format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400 600;font-stretch:100%;font-display:swap;
+  src:url(/assets/fonts/plexsans-400-600-latin-ext.woff2) format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;
+  src:url(/assets/fonts/plexmono-500-latin.woff2) format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+:root{
+  --azul:#082C48; --azul-claro:#0E4270;
+  --verde:#54A02C; --verde-claro:#8FCF63; --verde-osc:#3F7A22;
+  --blanco:#FFFFFF; --gris:#F4F6F8; --linea:#E1E8ED;
+  --texto:#0E1F2B; --suave:#55646E; --radio:16px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--blanco);color:var(--texto);
+  font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:clamp(1rem,.95rem + .3vw,1.12rem);line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  min-height:100svh;display:flex;flex-direction:column;
+}
+:where(a,button):focus-visible{outline:3px solid var(--azul);outline-offset:3px;border-radius:6px}
+
+/* Cabecera igual que la del resto de la web */
+header.bar{padding:14px 0;border-bottom:1px solid var(--linea)}
+header.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px}
+a.logo{
+  display:inline-flex;align-items:center;gap:9px;text-decoration:none;min-height:44px;
+}
+a.logo .name{
+  font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.3rem;
+  color:var(--azul);letter-spacing:-.02em;
+}
+a.logo sup{font-size:.6rem;font-weight:600}
+a.volver{
+  font-size:.92rem;font-weight:600;color:var(--azul-claro);text-decoration:none;
+  display:inline-flex;align-items:center;min-height:44px;
+}
+a.volver:hover{text-decoration:underline}
+
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}   /* la misma medida que el resto de la web */
+main{flex:1;padding:56px 0 88px}
+.doc{max-width:53ch}   /* ~70 caracteres reales: el ch de Plex Sans es 1,3x el carácter medio */
+
+h1{
+  font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;font-weight:800;
+  font-size:clamp(2rem,1.5rem + 2.4vw,3.2rem);letter-spacing:-.025em;line-height:1.05;
+  color:var(--azul);margin-bottom:12px;
+}
+.fecha{
+  font-family:"IBM Plex Mono",monospace;font-size:.78rem;font-weight:500;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--verde-osc);margin-bottom:48px;
+}
+h2{
+  font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;font-weight:800;
+  font-size:clamp(1.25rem,1.1rem + .7vw,1.6rem);letter-spacing:-.02em;line-height:1.2;
+  color:var(--azul);margin:44px 0 12px;
+}
+h3{font-weight:600;font-size:1.05rem;color:var(--azul);margin:26px 0 6px}
+p{margin-bottom:14px}
+p,li{color:var(--texto)}
+ul{margin:0 0 16px 22px}
+li{margin-bottom:8px}
+a{color:var(--azul-claro);font-weight:600}
+strong,b{font-weight:600;color:var(--azul)}
+
+.aviso{
+  background:var(--gris);border:1px solid var(--linea);
+  border-radius:var(--radio);padding:22px 26px;margin:28px 0;
+}
+.aviso p:last-child{margin-bottom:0}
+
+.tabla{width:100%;border-collapse:collapse;margin:18px 0 26px;font-size:.95rem}
+.tabla th,.tabla td{
+  text-align:left;padding:12px 14px;border-bottom:1px solid var(--linea);vertical-align:top;
+}
+.tabla th{
+  font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:.72rem;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--verde-osc);
+}
+.tabla td:first-child{font-weight:600;color:var(--azul)}
+/* La tabla se sale de la medida de lectura del texto: con 53ch se estrujaba */
+.envoltorio-tabla{width:min(46rem,calc(100vw - 48px));overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+footer{border-top:1px solid var(--linea);padding:26px 0 34px;font-size:.85rem;color:var(--suave)}
+footer nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+footer nav a{
+  display:inline-flex;align-items:center;min-height:44px;padding:0 10px;
+  color:var(--azul-claro);font-weight:600;text-decoration:none;
+}
+@media (hover:hover) and (pointer:fine){footer nav a:hover{text-decoration:underline}}
+
+@media(max-width:600px){
+  main{padding:40px 0 64px}
+  h2{margin-top:36px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;
+    transition:none!important;scroll-behavior:auto!important}
+}

@@ -10,70 +10,77 @@
 <link rel="icon" type="image/png" href="/assets/img/app-activala.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/manrope-200-800-latin.woff2">
-<style>
-/* Fuentes servidas desde activala.es. Copia fiel de lo que daba Google Fonts,
-   con sus mismos unicode-range y limitada a latin y latin-ext. */
-@font-face{font-family:'Manrope';font-style:normal;font-weight:200 800;font-display:swap;
-  src:url(/assets/fonts/manrope-200-800-latin.woff2) format('woff2');
-  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:200 800;font-display:swap;
-  src:url(/assets/fonts/manrope-200-800-latin-ext.woff2) format('woff2');
-  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
-@font-face{font-family:'Quicksand';font-style:normal;font-weight:700;font-display:swap;
-  src:url(/assets/fonts/quicksand-700-latin.woff2) format('woff2');
-  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
-@font-face{font-family:'Quicksand';font-style:normal;font-weight:700;font-display:swap;
-  src:url(/assets/fonts/quicksand-700-latin-ext.woff2) format('woff2');
-  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
-
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Manrope',sans-serif;background:#fff;color:#16242B;-webkit-font-smoothing:antialiased;line-height:1.7}
-.saneas{font-family:'Quicksand',sans-serif;font-weight:700}
-.wrap{max-width:760px;margin:0 auto;padding:60px 24px 80px}
-a.volver{display:inline-block;font-size:14px;font-weight:800;color:#1E5466;text-decoration:none;margin-bottom:36px}
-h1{font-size:clamp(30px,5vw,44px);font-weight:900;letter-spacing:-1.5px;color:#1E5466;margin-bottom:10px}
-.fecha{font-size:13px;color:#55646E;margin-bottom:40px}
-h2{font-size:20px;font-weight:800;letter-spacing:-0.4px;color:#1E5466;margin:36px 0 12px}
-p,li{font-size:15.5px;color:#16242B;font-weight:500}
-ul{padding-left:22px;margin:10px 0}
-li{margin-bottom:6px}
-.aviso{background:#f4f7f6;border-radius:16px;padding:18px 22px;font-size:14px;color:#55646E;margin-top:40px}
-</style>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/bricolage-800-latin.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/plexsans-400-600-latin.woff2">
+<link rel="stylesheet" href="/assets/legal.css">
 </head>
 <body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/">
+      <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M10 30 L32 10 L54 30" fill="none" stroke="#082C48" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 30 V54" fill="none" stroke="#082C48" stroke-width="7" stroke-linecap="round"/>
+        <path d="M50 30 V54" fill="none" stroke="#082C48" stroke-width="7" stroke-linecap="round"/>
+        <path d="M27 26 L44 35 L27 44 Z" fill="#54A02C"/>
+        <rect x="26" y="48" width="7" height="7" rx="2" fill="#54A02C"/>
+        <rect x="36" y="48" width="7" height="7" rx="2" fill="#54A02C"/>
+      </svg>
+      <span class="name">Activala<sup>®</sup></span>
+    </a>
+    <a class="volver" href="/">← Volver a Activala</a>
+  </div>
+</header>
+
 <main id="contenido">
 <div class="wrap">
-  <a class="volver" href="/">← Volver a Activala</a>
-  <h1>Política de privacidad</h1>
-  <p class="fecha">Última actualización: julio de 2026</p>
+<div class="doc">
 
-  <h2>Quién es el responsable</h2>
-  <p>Activala®, marca operada por Óscar Belloso Jiménez, NIF 46922078P, con contacto en el WhatsApp indicado en esta web. Somos quienes decidimos para qué se usan los datos que nos das y quienes respondemos de ellos.</p>
+<h1>Política de privacidad</h1>
+<p class="fecha">Última actualización: agosto de 2026</p>
 
-  <h2>Qué datos recogemos y para qué</h2>
-  <p>Solo los que tú escribes en el formulario o nos mandas por WhatsApp:</p>
-  <ul>
-    <li><b>Si tienes una casa:</b> tu nombre, idioma, email, WhatsApp y dónde está la vivienda. Los usamos para estudiar tu vivienda y contactarte con una propuesta.</li>
-    <li><b>Si buscas una casa:</b> tu nombre, idioma, email, WhatsApp y los meses en que quieres venir. Los usamos para enviarte viviendas disponibles que encajen.</li>
-  </ul>
-  <p>No pedimos números de documento ni datos bancarios en esta web. No usamos tus datos para publicidad de terceros ni los vendemos a nadie.</p>
+<h2>Quién es el responsable</h2>
+<p>Activala®, marca operada por Óscar Belloso Jiménez, NIF 46922078P, con contacto en el WhatsApp indicado en esta web. Somos quienes decidimos para qué se usan los datos que nos das y quienes respondemos de ellos.</p>
 
-  <h2>Base legal</h2>
-  <p>Tu consentimiento, que nos das al marcar la casilla antes de enviar el formulario, y las medidas precontractuales que nos pides al solicitar que estudiemos tu caso (art. 6.1.a y 6.1.b del RGPD).</p>
+<h2>Qué datos recogemos y para qué</h2>
+<p>Solo los que tú escribes en el formulario o nos mandas por WhatsApp:</p>
+<ul>
+  <li><b>Si tienes una casa:</b> tu nombre, idioma, email, WhatsApp y dónde está la vivienda. Los usamos para estudiar tu vivienda y contactarte con una propuesta.</li>
+  <li><b>Si buscas una casa:</b> tu nombre, idioma, email, WhatsApp y los meses en que quieres venir. Los usamos para enviarte viviendas disponibles que encajen.</li>
+</ul>
+<p>No pedimos números de documento ni datos bancarios en esta web. No usamos tus datos para publicidad de terceros ni los vendemos a nadie.</p>
 
-  <h2>Cuánto tiempo los guardamos</h2>
-  <p>Mientras gestionamos tu solicitud y, como máximo, un año desde el último contacto si no llegamos a trabajar juntos. Si te conviertes en cliente, los plazos pasan a ser los del contrato y los que exige la normativa fiscal.</p>
+<h2>Base legal</h2>
+<p>Tu consentimiento, que nos das al marcar la casilla antes de enviar el formulario, y las medidas precontractuales que nos pides al solicitar que estudiemos tu caso (art. 6.1.a y 6.1.b del RGPD).</p>
 
-  <h2>Con quién se comparten</h2>
-  <p>Con nuestros proveedores técnicos, que actúan como encargados del tratamiento con contrato: Supabase (base de datos) y Resend (envío de avisos por correo). No hay más destinatarios.</p>
+<h2>Cuánto tiempo los guardamos</h2>
+<p>Mientras gestionamos tu solicitud y, como máximo, un año desde el último contacto si no llegamos a trabajar juntos. Si te conviertes en cliente, los plazos pasan a ser los del contrato y los que exige la normativa fiscal.</p>
 
-  <h2>Tus derechos</h2>
-  <p>Puedes pedirnos acceso, rectificación, supresión, oposición, limitación y portabilidad de tus datos cuando quieras, por WhatsApp o por correo. Te contestamos y borramos lo que pidas sin hacer preguntas. Si crees que algo no lo hemos hecho bien, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
+<h2>Con quién se comparten</h2>
+<p>Con nuestros proveedores técnicos, que actúan como encargados del tratamiento con contrato: Supabase (base de datos) y Resend (envío de avisos por correo). No hay más destinatarios.</p>
 
-  <p class="aviso">Esta web no usa cookies de seguimiento ni analítica de terceros. Solo llevamos un recuento propio y anónimo de visitas (un identificador aleatorio guardado en tu navegador, sin nombre, correo ni IP), que nos dice cuánta gente entra y desde qué país.</p>
+<h2>Tus derechos</h2>
+<p>Puedes pedirnos acceso, rectificación, supresión, oposición, limitación y portabilidad de tus datos cuando quieras, por WhatsApp o por correo. Te contestamos y borramos lo que pidas sin hacer preguntas. Si crees que algo no lo hemos hecho bien, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
+
+<p class="aviso">Esta web no usa cookies de seguimiento ni analítica de terceros. Solo llevamos un recuento propio y anónimo de visitas (un identificador aleatorio guardado en tu navegador, sin nombre, correo ni IP), que nos dice cuánta gente entra y desde qué país. Lo tienes explicado al detalle en la <a href="/cookies">página de cookies</a>.</p>
+
 </div>
-<script src="/js/telemetria.js" defer></script>
+</div>
 </main>
+
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="/privacidad">Privacidad</a>
+      <a href="/aviso-legal">Aviso legal</a>
+      <a href="/cookies">Cookies</a>
+    </nav>
+    © 2026 Activala® · El alquiler activo del sur de Gran Canaria
+  </div>
+</footer>
+
+<script src="/js/telemetria.js" defer></script>
 </body>
 </html>
