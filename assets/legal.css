@@ -50,6 +50,17 @@ a.volver{
   display:inline-flex;align-items:center;min-height:44px;
 }
 a.volver:hover{text-decoration:underline}
+/* Lado derecho de la cabecera: selector de idiomas + volver */
+.der{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:flex-end}
+/* Selector de idiomas, igual que el de la portada (aquí sin la animación de barrido) */
+.idiomas{display:flex;align-items:center;gap:3px;padding:6px;border:1.5px solid var(--linea);border-radius:999px;background:#fff}
+.idiomas button{font:inherit;font-family:"IBM Plex Mono",monospace;font-size:.75rem;letter-spacing:.05em;cursor:pointer;border:0;background:none;color:var(--suave);padding:7px 9px;border-radius:999px}
+.idiomas button:hover{background:var(--gris);color:var(--azul)}
+.idiomas button[aria-current="true"]{background:var(--azul);color:#fff;font-weight:500}
+@media(max-width:600px){
+  header.bar .wrap{flex-wrap:wrap}
+  .der{width:100%;justify-content:space-between}
+}
 
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}   /* la misma medida que el resto de la web */
 main{flex:1;padding:56px 0 88px}
