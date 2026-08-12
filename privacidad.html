@@ -10,20 +10,35 @@
 <link rel="icon" type="image/png" href="/assets/img/app-activala.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/manrope-200-800-latin.woff2">
 <style>
+/* Fuentes servidas desde activala.es. Copia fiel de lo que daba Google Fonts,
+   con sus mismos unicode-range y limitada a latin y latin-ext. */
+@font-face{font-family:'Manrope';font-style:normal;font-weight:200 800;font-display:swap;
+  src:url(/assets/fonts/manrope-200-800-latin.woff2) format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:200 800;font-display:swap;
+  src:url(/assets/fonts/manrope-200-800-latin-ext.woff2) format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Quicksand';font-style:normal;font-weight:700;font-display:swap;
+  src:url(/assets/fonts/quicksand-700-latin.woff2) format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Quicksand';font-style:normal;font-weight:700;font-display:swap;
+  src:url(/assets/fonts/quicksand-700-latin-ext.woff2) format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Manrope',sans-serif;background:#fff;color:#16242B;-webkit-font-smoothing:antialiased;line-height:1.7}
 .saneas{font-family:'Quicksand',sans-serif;font-weight:700}
 .wrap{max-width:760px;margin:0 auto;padding:60px 24px 80px}
 a.volver{display:inline-block;font-size:14px;font-weight:800;color:#1E5466;text-decoration:none;margin-bottom:36px}
 h1{font-size:clamp(30px,5vw,44px);font-weight:900;letter-spacing:-1.5px;color:#1E5466;margin-bottom:10px}
-.fecha{font-size:13px;color:#66767C;margin-bottom:40px}
+.fecha{font-size:13px;color:#55646E;margin-bottom:40px}
 h2{font-size:20px;font-weight:800;letter-spacing:-0.4px;color:#1E5466;margin:36px 0 12px}
 p,li{font-size:15.5px;color:#16242B;font-weight:500}
 ul{padding-left:22px;margin:10px 0}
 li{margin-bottom:6px}
-.aviso{background:#f4f7f6;border-radius:16px;padding:18px 22px;font-size:14px;color:#66767C;margin-top:40px}
+.aviso{background:#f4f7f6;border-radius:16px;padding:18px 22px;font-size:14px;color:#55646E;margin-top:40px}
 </style>
 </head>
 <body>
