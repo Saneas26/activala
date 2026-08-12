@@ -20,6 +20,14 @@ create table if not exists public.interesados (
 
 alter table public.interesados enable row level security;
 
+-- El GRANT es imprescindible: la política RLS por sí sola NO basta.
+-- Normalmente Supabase lo concede solo (default privileges), pero al restaurar
+-- un proyecto pausado esos privilegios NO vuelven: el formulario devuelve
+-- «permission denied for table interesados» (42501) aunque la tabla exista.
+-- Solo INSERT: anon nunca puede leer, editar ni borrar.
+grant usage on schema public to anon;
+grant insert on table public.interesados to anon;
+
 -- Solo INSERT para anon. Sin políticas de select/update/delete: deny-all.
 drop policy if exists interesados_insert_anon on public.interesados;
 create policy interesados_insert_anon
