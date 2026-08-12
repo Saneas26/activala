@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Esta página no existe — Activala®</title>
+<link rel="canonical" href="https://activala.es/">
+<link rel="icon" type="image/png" href="/assets/img/app-activala.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --azul:#082C48; --azul-claro:#0E4270;
+  --verde:#54A02C; --verde-claro:#8FCF63; --verde-osc:#3F7A22;
+  --blanco:#FFFFFF; --gris:#F4F6F8; --linea:#E1E8ED;
+  --texto:#0E1F2B; --suave:#55646E; --radio:16px;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{
+  margin:0;background:var(--blanco);color:var(--texto);
+  font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:clamp(1rem,.95rem + .3vw,1.12rem);line-height:1.55;
+  min-height:100svh;display:flex;flex-direction:column;
+}
+.wrap{width:min(1100px,92vw);margin:0 auto}
+
+:where(a,button):focus-visible{outline:3px solid var(--azul);outline-offset:3px;border-radius:6px}
+
+.bar{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:16px 0;border-bottom:1px solid var(--linea);
+}
+.logo{
+  display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+  color:var(--azul);font-family:"Bricolage Grotesque",sans-serif;font-weight:800;
+  font-size:1.25rem;letter-spacing:-.02em;min-height:44px;
+}
+.logo sup{font-size:.6rem;font-weight:600}
+
+main{flex:1;display:flex;align-items:center;padding:72px 0 96px}
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace;font-size:.8rem;font-weight:500;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--verde-osc);
+  display:block;margin-bottom:18px;
+}
+h1{
+  font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;font-weight:800;
+  letter-spacing:-.025em;line-height:1;margin:0 0 18px;
+  font-size:clamp(2.4rem,1.6rem + 3.4vw,4.4rem);color:var(--azul);
+}
+h1 em{font-style:normal;color:var(--verde-osc)}
+p.sub{margin:0 0 40px;color:var(--suave);max-width:52ch}
+
+.acciones{display:flex;gap:12px;flex-wrap:wrap}
+.acciones a{
+  display:inline-flex;align-items:center;min-height:44px;
+  padding:13px 26px;border-radius:999px;text-decoration:none;
+  font-weight:600;font-size:1rem;
+  transition:background .2s ease,color .2s ease,transform 160ms ease-out;
+}
+.principal{background:var(--verde-claro);color:var(--azul)}
+.secundario{border:1.5px solid var(--linea);color:var(--azul)}
+@media (hover:hover) and (pointer:fine){
+  .principal:hover{background:#a2dc79}
+  .secundario:hover{border-color:var(--azul)}
+}
+.acciones a:active{transform:scale(0.97)}
+
+footer{border-top:1px solid var(--linea);padding:26px 0;font-size:.8rem;color:var(--suave)}
+footer .wrap{display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap}
+footer a{color:var(--suave);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+@media (hover:hover) and (pointer:fine){footer a:hover{color:var(--azul)}}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;
+    transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap" style="display:flex;align-items:center">
+    <a class="logo" href="/">Activala<sup>®</sup></a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <span class="eyebrow">Error 404</span>
+    <h1>Esta dirección<br><em>no lleva a ningún sitio.</em></h1>
+    <p class="sub">O está mal escrita, o la hemos movido. Ninguna de las dos es culpa tuya.</p>
+    <div class="acciones">
+      <a class="principal" href="/">Ir al inicio</a>
+      <a class="secundario" href="/alquilar">Buscar casa</a>
+      <a class="secundario" href="/activar">Activar mi casa</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Activala® · El alquiler activo del sur de Gran Canaria</span>
+    <a href="/privacidad">Política de privacidad</a>
+  </div>
+</footer>
+
+</body>
+</html>
