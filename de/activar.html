@@ -108,11 +108,13 @@ section h2{font-size:clamp(1.7rem,1.2rem + 2.2vw,2.7rem);text-align:center;max-w
 .remate{text-align:center;margin-top:34px;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.3rem;color:var(--verde-osc)}
 
 /* timeline */
-.pasos{max-width:640px;margin:44px auto 0;position:relative;padding-left:38px}
-.pasos::before{content:"";position:absolute;left:13px;top:8px;bottom:8px;width:2px;background:var(--linea)}
-.paso{position:relative;padding:0 0 30px}
+/* Los pasos van numerados en un círculo, no con el número dentro del texto:
+   se ve de un vistazo cuántos son y por dónde vas */
+.pasos{max-width:640px;margin:44px auto 0;position:relative;padding-left:52px;counter-reset:paso}
+.pasos::before{content:"";position:absolute;left:15px;top:14px;bottom:14px;width:2px;background:var(--linea)}
+.paso{position:relative;padding:0 0 30px;counter-increment:paso}
 .paso:last-child{padding-bottom:0}
-.paso::before{content:"";position:absolute;left:-32px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--verde);box-shadow:0 0 0 4px #E6F2DC}
+.paso::before{content:counter(paso);position:absolute;left:-52px;top:-2px;width:32px;height:32px;border-radius:50%;background:var(--verde);color:#fff;display:flex;align-items:center;justify-content:center;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:.95rem;border:4px solid #fff}
 .paso b{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;color:var(--azul)}
 .paso span{color:var(--suave)}
 
@@ -176,6 +178,21 @@ section h2{font-size:clamp(1.7rem,1.2rem + 2.2vw,2.7rem);text-align:center;max-w
 .hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
 .btn-form{width:100%;justify-content:center;display:inline-flex;align-items:center;gap:10px;background:var(--verde-claro);color:var(--azul);font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.1rem;padding:16px 34px;border-radius:999px;border:0;cursor:pointer;box-shadow:0 10px 34px rgba(84,160,44,.28);transition:transform .16s}
 .btn-form:hover{transform:translateY(-2px)}
+
+/* Formulario por pasos. Sin JS se ve todo seguido: estas piezas nacen
+   ocultas y solo las enciende form-pasos.js al añadir .js-pasos */
+.fp-barra,.fp-num,.fp-h,.fp-atras,.fp-sig{display:none}
+.js-pasos .fp-barra{display:block;height:6px;background:var(--gris);border:1px solid var(--linea);border-radius:999px;overflow:hidden;margin-bottom:14px}
+.js-pasos .fp-barra i{display:block;height:100%;background:var(--verde);border-radius:999px;transition:width .32s ease}
+.js-pasos .fp-num{display:block;font-family:"IBM Plex Mono",monospace;font-size:.75rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--verde-osc);margin-bottom:20px}
+.js-pasos .fp-h{display:block;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.35rem;line-height:1.2;letter-spacing:-.02em;color:var(--azul);margin-bottom:22px}
+.fp-nav{display:flex;gap:12px;align-items:center}
+.fp-nav .btn-form{margin:0}
+.js-pasos .fp-atras{display:inline-flex;align-items:center;justify-content:center;flex:none;background:#fff;border:1.5px solid var(--linea);color:var(--azul);font:inherit;font-weight:600;padding:15px 24px;border-radius:999px;cursor:pointer;min-height:44px}
+.js-pasos .fp-atras:hover{background:var(--gris)}
+.js-pasos .fp-sig{display:inline-flex;align-items:center;justify-content:center;gap:10px;flex:1;background:var(--verde-claro);color:var(--azul);font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.1rem;padding:16px 30px;border-radius:999px;border:0;cursor:pointer;box-shadow:0 10px 34px rgba(84,160,44,.28);transition:transform .16s}
+.js-pasos .fp-sig:hover{transform:translateY(-2px)}
+.js-pasos [hidden]{display:none}
 .bajo-btn{text-align:center;font-size:.85rem;color:var(--suave);margin-top:14px}
 
 /* pie del grupo */
@@ -304,13 +321,13 @@ footer .copy{font-size:12px;color:var(--suave);margin-top:30px}
   <div class="wrap">
     <h2 data-i="a3.h">So funktioniert es</h2>
     <div class="pasos">
-      <div class="paso"><b data-i="a3.p1b">1 · Wir lernen uns kennen.</b> <span data-i="a3.p1s">Sie schreiben uns per WhatsApp, wir antworten in Ihrer Sprache. Unverbindlich.</span></div>
-      <div class="paso"><b data-i="a3.p2b">2 · Wir prüfen Ihr Haus.</b> <span data-i="a3.p2s">Lizenz, Vorschriften und welcher Vertrag möglich ist. Kostenlos, und Sie müssen nichts recherchieren.</span></div>
-      <div class="paso"><b data-i="a3.p3b">3 · Wir bereiten es vor.</b> <span data-i="a3.p3s">Fotos, Video und Veröffentlichung in Deutschland, Norwegen und Schweden.</span></div>
-      <div class="paso"><b data-i="a3.p4b">4 · Wir wählen den Mieter aus.</b> <span data-i="a3.p4s">Identifiziert, geprüft und mit vorherigem schriftlichem Gespräch.</span></div>
-      <div class="paso"><b data-i="a3.p5b">5 · Wir betreuen den Aufenthalt.</b> <span data-i="a3.p5s">Reinigung, Instandhaltung und Schlüssel.</span></div>
-      <div class="paso"><b data-i="a3.p6b">6 · Wir informieren Sie.</b> <span data-i="a3.p6s">Video und Bericht, jede Woche.</span></div>
-      <div class="paso"><b data-i="a3.p7b">7 · Sie kommen zurück.</b> <span data-i="a3.p7s">Und alles ist genau so, wie Sie es erwartet haben.</span></div>
+      <div class="paso"><b data-i="a3.p1b">Wir lernen uns kennen.</b> <span data-i="a3.p1s">Sie schreiben uns per WhatsApp, wir antworten in Ihrer Sprache. Unverbindlich.</span></div>
+      <div class="paso"><b data-i="a3.p2b">Wir prüfen Ihr Haus.</b> <span data-i="a3.p2s">Lizenz, Vorschriften und welcher Vertrag möglich ist. Kostenlos, und Sie müssen nichts recherchieren.</span></div>
+      <div class="paso"><b data-i="a3.p3b">Wir bereiten es vor.</b> <span data-i="a3.p3s">Fotos, Video und Veröffentlichung in Deutschland, Norwegen und Schweden.</span></div>
+      <div class="paso"><b data-i="a3.p4b">Wir wählen den Mieter aus.</b> <span data-i="a3.p4s">Identifiziert, geprüft und mit vorherigem schriftlichem Gespräch.</span></div>
+      <div class="paso"><b data-i="a3.p5b">Wir betreuen den Aufenthalt.</b> <span data-i="a3.p5s">Reinigung, Instandhaltung und Schlüssel.</span></div>
+      <div class="paso"><b data-i="a3.p6b">Wir informieren Sie.</b> <span data-i="a3.p6s">Video und Bericht, jede Woche.</span></div>
+      <div class="paso"><b data-i="a3.p7b">Sie kommen zurück.</b> <span data-i="a3.p7s">Und alles ist genau so, wie Sie es erwartet haben.</span></div>
     </div>
   </div>
 </section>
@@ -392,20 +409,39 @@ footer .copy{font-size:12px;color:var(--suave);margin-top:30px}
   <div class="wrap">
     <h2 data-i="a9.h">Schalten wir Ihr Haus ein?</h2>
     <p class="sub" data-i="a9.sub">Erzählen Sie es uns in einer Minute. Ohne Registrierung, ohne Bankdaten und unverbindlich. Wir antworten in Ihrer Sprache.</p>
-    <form class="formcard" id="fInteresados" novalidate>
-      <div class="grid2">
-        <label class="f"><span class="lab" data-i="f.nombre">Name</span><input type="text" name="nombre" autocomplete="name" autocapitalize="words" required></label>
-        <label class="f"><span class="lab" data-i="f.idioma">Bevorzugte Sprache</span>
-          <select name="idioma"><option>Español</option><option>Deutsch</option><option>English</option><option>Norsk</option><option>Svenska</option><option>Otro</option></select></label>
-        <label class="f"><span class="lab" data-i="f.email">E-Mail</span><input type="email" name="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" required></label>
-        <label class="f"><span class="lab" data-i="f.wa">WhatsApp</span><input type="tel" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="+34 …" required></label>
+    <form class="formcard" id="fInteresados" novalidate data-pasos>
+      <div class="fp-barra" aria-hidden="true"><i style="width:33%"></i></div>
+      <p class="fp-num"><span data-i="f.paso">Schritt</span> <b class="fp-i">1</b> <span data-i="f.de">von</span> <b class="fp-total">3</b></p>
+
+      <div class="fpaso">
+        <h3 class="fp-h" data-i="f.p1.h">Wo liegt Ihr Haus?</h3>
+        <label class="f"><span class="lab" data-i="f.donde">Wo liegt das Haus? (Anlage oder Gegend)</span><input type="text" name="donde" data-i-ph="f.donde.ph" placeholder="Campo Internacional, Sonnenland, Arguineguín…"></label>
       </div>
-      <label class="f"><span class="lab" data-i="f.donde">Wo liegt das Haus? (Anlage oder Gegend)</span><input type="text" name="donde" data-i-ph="f.donde.ph" placeholder="Campo Internacional, Sonnenland, Arguineguín…"></label>
-      <label class="f"><span class="lab" data-i="f.mensaje">Sonst noch etwas, das wir wissen sollten? (optional)</span><textarea name="mensaje"></textarea></label>
+
+      <div class="fpaso">
+        <h3 class="fp-h" data-i="f.p2.h">Wie erreichen wir Sie?</h3>
+        <div class="grid2">
+          <label class="f"><span class="lab" data-i="f.nombre">Name</span><input type="text" name="nombre" autocomplete="name" autocapitalize="words" required></label>
+          <label class="f"><span class="lab" data-i="f.idioma">Bevorzugte Sprache</span>
+            <select name="idioma"><option>Español</option><option>Deutsch</option><option>English</option><option>Norsk</option><option>Svenska</option><option>Otro</option></select></label>
+          <label class="f"><span class="lab" data-i="f.email">E-Mail</span><input type="email" name="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" required></label>
+          <label class="f"><span class="lab" data-i="f.wa">WhatsApp</span><input type="tel" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="+34 …" required></label>
+        </div>
+      </div>
+
+      <div class="fpaso">
+        <h3 class="fp-h" data-i="f.p3.h">Sollten wir noch etwas wissen?</h3>
+        <label class="f"><span class="lab" data-i="f.mensaje">Sonst noch etwas, das wir wissen sollten? (optional)</span><textarea name="mensaje"></textarea></label>
+        <label class="consent"><input type="checkbox" id="consent">
+          <span data-i="f.consent.prop">Ich bin einverstanden, dass Activala diese Daten verwendet, um meine Immobilie zu prüfen und mich zu kontaktieren. Ich kann jederzeit die Löschung verlangen. <a href="/privacidad.html">Datenschutzerklärung</a>.</span></label>
+      </div>
+
       <label class="hp" aria-hidden="true">No rellenes este campo<input type="text" name="c_web" tabindex="-1" autocomplete="off"></label>
-      <label class="consent"><input type="checkbox" id="consent">
-        <span data-i="f.consent.prop">Ich bin einverstanden, dass Activala diese Daten verwendet, um meine Immobilie zu prüfen und mich zu kontaktieren. Ich kann jederzeit die Löschung verlangen. <a href="/privacidad.html">Datenschutzerklärung</a>.</span></label>
-      <button class="btn-form" type="submit" data-i="cta">Mein Haus aktivieren</button>
+      <div class="fp-nav">
+        <button type="button" class="fp-atras" data-i="f.atras">← Zurück</button>
+        <button type="button" class="fp-sig" data-i="f.sig">Weiter →</button>
+        <button class="btn-form" type="submit" data-i="cta">Mein Haus aktivieren</button>
+      </div>
       <p class="bajo-btn" data-i="f.bajo.prop">Wir antworten in Ihrer Sprache, in der Regel noch am selben Tag.</p>
       <p class="form-msg" id="fmsg"></p>
     </form>
@@ -417,9 +453,10 @@ footer .copy{font-size:12px;color:var(--suave);margin-top:30px}
   <div class="logo-f">Activala<sup>®</sup></div>
   <div class="footer-links">
     <a href="https://api.whatsapp.com/send?phone=34689806987">WhatsApp</a>
-    <a href="/privacidad">Privacidad</a>
-    <a href="/aviso-legal">Aviso legal</a>
-    <a href="/cookies">Cookies</a>
+    <a href="/de/ayuda" data-i="nav.ayuda">Hilfe</a>
+    <a href="/privacidad" data-i="nav.priv">Datenschutz</a>
+    <a href="/aviso-legal" data-i="nav.aviso">Rechtliche Hinweise</a>
+    <a href="/cookies" data-i="nav.ck">Cookies</a>
   </div>
   <div class="fg-title">El grupo Saneas</div>
   <div id="grupoPie"></div>
@@ -502,6 +539,7 @@ document.getElementById('fInteresados').addEventListener('submit', async ev=>{
 });
 </script>
 <script src="/js/idioma-guardado.js"></script>
+<script src="/js/form-pasos.js"></script>
 <script src="/js/telemetria.js" defer></script>
 <script src="/assets/js/grupo-saneas.js"></script>
 <script>

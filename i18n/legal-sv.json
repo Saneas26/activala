@@ -6,7 +6,6 @@
   "lg.nav.ck": "Cookies",
   "lg.pie": "© 2026 Activala® · Den aktiva uthyrningen på södra Gran Canaria",
   "lg.fecha": "Senast uppdaterad: augusti 2026",
-
   "pr.title": "Integritetspolicy — Activala®",
   "pr.meta": "Activalas integritetspolicy: vilka uppgifter vi samlar in när du kontaktar oss, vad de används till och hur du utövar dina rättigheter.",
   "pr.h1": "Integritetspolicy",
@@ -26,7 +25,6 @@
   "pr.der.h": "Dina rättigheter",
   "pr.der.p": "Du kan när som helst be oss om tillgång, rättelse, radering, invändning, begränsning och flytt av dina uppgifter, på WhatsApp eller per e-post. Vi svarar och raderar det du ber om utan att ställa frågor. Tycker du att vi har gjort något fel kan du klaga hos Agencia Española de Protección de Datos (den spanska dataskyddsmyndigheten, aepd.es).",
   "pr.aviso": "Denna webbplats använder inga spårningscookies och ingen analys från tredje part. Vi för bara en egen, anonym räkning av besök (ett slumpmässigt id sparat i din webbläsare, utan namn, e-post eller IP) som visar hur många som kommer in och från vilket land. Allt förklaras i detalj på <a href=\"/cookies\">cookiesidan</a>.",
-
   "al.title": "Juridisk information — Activala®",
   "al.meta": "Activalas juridiska information: vem som står bakom denna webbplats, vad tjänsten är och villkoren för användning.",
   "al.h1": "Juridisk information",
@@ -56,7 +54,6 @@
   "al.ley.p": "Dessa villkor styrs av <strong>spansk lag</strong>. Vid tvist avgörs vilken domstol som är behörig enligt konsumentreglerna.",
   "al.datos.h": "Hur vi hanterar dina uppgifter",
   "al.datos.p": "Allt förklaras i <a href=\"/privacidad\">integritetspolicyn</a>, och det vi sparar i din webbläsare på <a href=\"/cookies\">cookiesidan</a>.",
-
   "ck.title": "Cookies och lagring — Activala®",
   "ck.meta": "Vad Activala sparar i din webbläsare: språket du väljer och ett slumpmässigt id för att räkna besök. Ingen reklam och ingen spårning från tredje part.",
   "ck.h1": "Cookies och lagring",
@@ -87,5 +84,6 @@
   "ck.borrar.li3": "Eller använd ett privat fönster: när du stänger det finns inget kvar.",
   "ck.borrar.p2": "Raderar du det fortsätter webbplatsen att fungera som vanligt. Den frågar bara om språket igen, och vi slutar räkna dig som ett återkommande besök.",
   "ck.mas.h": "Mer information",
-  "ck.mas.p": "Vad vi gör med de uppgifter du faktiskt lämnar står i <a href=\"/privacidad\">integritetspolicyn</a>. Vem som står bakom denna webbplats, i den <a href=\"/aviso-legal\">juridiska informationen</a>."
+  "ck.mas.p": "Vad vi gör med de uppgifter du faktiskt lämnar står i <a href=\"/privacidad\">integritetspolicyn</a>. Vem som står bakom denna webbplats, i den <a href=\"/aviso-legal\">juridiska informationen</a>.",
+  "lg.nav.ayuda": "Hjälp"
 }
