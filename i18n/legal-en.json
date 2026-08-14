@@ -6,7 +6,6 @@
   "lg.nav.ck": "Cookies",
   "lg.pie": "© 2026 Activala® · Active renting in the south of Gran Canaria",
   "lg.fecha": "Last updated: August 2026",
-
   "pr.title": "Privacy policy — Activala®",
   "pr.meta": "Activala's privacy policy: what details we collect when you contact us, what for, and how to exercise your rights.",
   "pr.h1": "Privacy policy",
@@ -26,7 +25,6 @@
   "pr.der.h": "Your rights",
   "pr.der.p": "You can ask us for access, rectification, erasure, objection, restriction and portability of your details whenever you like, on WhatsApp or by email. We reply and delete whatever you ask, no questions asked. If you think we've got something wrong, you can complain to the Agencia Española de Protección de Datos (the Spanish data protection authority, aepd.es).",
   "pr.aviso": "This website uses no tracking cookies and no third-party analytics. We only keep our own anonymous count of visits (a random identifier stored in your browser, with no name, email or IP), which tells us how many people visit and from which country. It's all explained in detail on the <a href=\"/cookies\">cookies page</a>.",
-
   "al.title": "Legal notice — Activala®",
   "al.meta": "Activala's legal notice: who is behind this website, what the service is, and terms of use.",
   "al.h1": "Legal notice",
@@ -56,7 +54,6 @@
   "al.ley.p": "These terms are governed by <strong>Spanish law</strong>. For any dispute, jurisdiction lies with the courts that apply under consumer law.",
   "al.datos.h": "How we handle your details",
   "al.datos.p": "It's all explained in the <a href=\"/privacidad\">privacy policy</a>, and what we store in your browser, on the <a href=\"/cookies\">cookies page</a>.",
-
   "ck.title": "Cookies and storage — Activala®",
   "ck.meta": "What Activala stores in your browser: the language you choose and a random identifier to count visits. No advertising and no third-party tracking.",
   "ck.h1": "Cookies and storage",
@@ -87,5 +84,6 @@
   "ck.borrar.li3": "Or use a private window: when you close it, nothing is left.",
   "ck.borrar.p2": "If you delete it, the website keeps working just the same. It will only ask you your language again, and we'll stop counting you as a repeat visit.",
   "ck.mas.h": "More information",
-  "ck.mas.p": "What we do with the details you do give us is in the <a href=\"/privacidad\">privacy policy</a>. Who is behind this website, in the <a href=\"/aviso-legal\">legal notice</a>."
+  "ck.mas.p": "What we do with the details you do give us is in the <a href=\"/privacidad\">privacy policy</a>. Who is behind this website, in the <a href=\"/aviso-legal\">legal notice</a>.",
+  "lg.nav.ayuda": "Help"
 }
