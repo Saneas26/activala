@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rehace sitemap.xml con las 15 URLs públicas (5 idiomas x 3 páginas).
+"""Rehace sitemap.xml con las 20 URLs públicas (5 idiomas x 4 páginas).
 
     python3 i18n/generar-sitemap.py 2026-08-12
 
@@ -13,7 +13,7 @@ import pathlib, re, sys
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 BASE = 'https://activala.es'
 IDIOMAS = ['de', 'en', 'no', 'sv']
-PAGINAS = [('', '1.0'), ('activar', '0.9'), ('alquilar', '0.9')]
+PAGINAS = [('', '1.0'), ('activar', '0.9'), ('alquilar', '0.9'), ('ayuda', '0.6')]
 
 anterior = (RAIZ / 'sitemap.xml').read_text(encoding='utf-8') if (RAIZ / 'sitemap.xml').exists() else ''
 if len(sys.argv) > 1:

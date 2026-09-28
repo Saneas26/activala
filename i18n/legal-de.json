@@ -6,7 +6,6 @@
   "lg.nav.ck": "Cookies",
   "lg.pie": "© 2026 Activala® · Die aktive Vermietung im Süden von Gran Canaria",
   "lg.fecha": "Letzte Aktualisierung: August 2026",
-
   "pr.title": "Datenschutzerklärung — Activala®",
   "pr.meta": "Datenschutzerklärung von Activala: welche Daten wir bei der Kontaktaufnahme erheben, wofür, und wie Sie Ihre Rechte ausüben.",
   "pr.h1": "Datenschutzerklärung",
@@ -26,7 +25,6 @@
   "pr.der.h": "Ihre Rechte",
   "pr.der.p": "Sie können jederzeit Auskunft, Berichtigung, Löschung, Widerspruch, Einschränkung und Übertragbarkeit Ihrer Daten verlangen, per WhatsApp oder per E-Mail. Wir antworten Ihnen und löschen, was Sie verlangen, ohne Fragen zu stellen. Wenn Sie meinen, dass wir etwas nicht richtig gemacht haben, können Sie sich bei der Agencia Española de Protección de Datos (der spanischen Datenschutzbehörde, aepd.es) beschweren.",
   "pr.aviso": "Diese Website verwendet weder Tracking-Cookies noch Analysedienste Dritter. Wir führen nur eine eigene, anonyme Zählung der Besuche (eine zufällige Kennung, gespeichert in Ihrem Browser, ohne Name, E-Mail oder IP), die uns sagt, wie viele Menschen die Seite besuchen und aus welchem Land. Im Detail erklärt auf der <a href=\"/cookies\">Cookie-Seite</a>.",
-
   "al.title": "Rechtliche Hinweise — Activala®",
   "al.meta": "Rechtliche Hinweise von Activala: wer hinter dieser Website steht, was der Service ist, und die Nutzungsbedingungen.",
   "al.h1": "Rechtliche Hinweise",
@@ -56,7 +54,6 @@
   "al.ley.p": "Diese Bedingungen unterliegen <strong>spanischem Recht</strong>. Bei Streitigkeiten sind die Gerichte zuständig, die sich aus dem Verbraucherrecht ergeben.",
   "al.datos.h": "Wie wir Ihre Daten behandeln",
   "al.datos.p": "Alles ist in der <a href=\"/privacidad\">Datenschutzerklärung</a> erklärt, und was wir in Ihrem Browser speichern, auf der <a href=\"/cookies\">Cookie-Seite</a>.",
-
   "ck.title": "Cookies und Speicherung — Activala®",
   "ck.meta": "Was Activala in Ihrem Browser speichert: die gewählte Sprache und eine zufällige Kennung, um Besuche zu zählen. Keine Werbung, kein Tracking durch Dritte.",
   "ck.h1": "Cookies und Speicherung",
@@ -87,5 +84,6 @@
   "ck.borrar.li3": "Oder nutzen Sie ein privates Fenster: Beim Schließen bleibt nichts zurück.",
   "ck.borrar.p2": "Wenn Sie es löschen, funktioniert die Website ganz normal weiter. Sie fragt nur wieder nach der Sprache, und wir zählen Sie nicht mehr als wiederkehrenden Besuch.",
   "ck.mas.h": "Mehr Informationen",
-  "ck.mas.p": "Was wir mit den Daten machen, die Sie uns geben, steht in der <a href=\"/privacidad\">Datenschutzerklärung</a>. Wer hinter dieser Website steht, in den <a href=\"/aviso-legal\">rechtlichen Hinweisen</a>."
+  "ck.mas.p": "Was wir mit den Daten machen, die Sie uns geben, steht in der <a href=\"/privacidad\">Datenschutzerklärung</a>. Wer hinter dieser Website steht, in den <a href=\"/aviso-legal\">rechtlichen Hinweisen</a>.",
+  "lg.nav.ayuda": "Hilfe"
 }

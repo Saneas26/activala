@@ -92,7 +92,8 @@ const I18N = {
   "ck.borrar.li3": "O usa una ventana privada: al cerrarla no queda nada.",
   "ck.borrar.p2": "Si lo borras, la web sigue funcionando igual. Solo volverá a preguntarte el idioma y dejaremos de contarte como visita repetida.",
   "ck.mas.h": "Más información",
-  "ck.mas.p": "Qué hacemos con los datos que sí nos das está en la <a href=\"/privacidad\">política de privacidad</a>. Quién está detrás de esta web, en el <a href=\"/aviso-legal\">aviso legal</a>."
+  "ck.mas.p": "Qué hacemos con los datos que sí nos das está en la <a href=\"/privacidad\">política de privacidad</a>. Quién está detrás de esta web, en el <a href=\"/aviso-legal\">aviso legal</a>.",
+  "lg.nav.ayuda": "Ayuda"
  },
  de: {
   "lg.volver": "← Zurück zu Activala",
@@ -180,7 +181,8 @@ const I18N = {
   "ck.borrar.li3": "Oder nutzen Sie ein privates Fenster: Beim Schließen bleibt nichts zurück.",
   "ck.borrar.p2": "Wenn Sie es löschen, funktioniert die Website ganz normal weiter. Sie fragt nur wieder nach der Sprache, und wir zählen Sie nicht mehr als wiederkehrenden Besuch.",
   "ck.mas.h": "Mehr Informationen",
-  "ck.mas.p": "Was wir mit den Daten machen, die Sie uns geben, steht in der <a href=\"/privacidad\">Datenschutzerklärung</a>. Wer hinter dieser Website steht, in den <a href=\"/aviso-legal\">rechtlichen Hinweisen</a>."
+  "ck.mas.p": "Was wir mit den Daten machen, die Sie uns geben, steht in der <a href=\"/privacidad\">Datenschutzerklärung</a>. Wer hinter dieser Website steht, in den <a href=\"/aviso-legal\">rechtlichen Hinweisen</a>.",
+  "lg.nav.ayuda": "Hilfe"
  },
  en: {
   "lg.volver": "← Back to Activala",
@@ -268,7 +270,8 @@ const I18N = {
   "ck.borrar.li3": "Or use a private window: when you close it, nothing is left.",
   "ck.borrar.p2": "If you delete it, the website keeps working just the same. It will only ask you your language again, and we'll stop counting you as a repeat visit.",
   "ck.mas.h": "More information",
-  "ck.mas.p": "What we do with the details you do give us is in the <a href=\"/privacidad\">privacy policy</a>. Who is behind this website, in the <a href=\"/aviso-legal\">legal notice</a>."
+  "ck.mas.p": "What we do with the details you do give us is in the <a href=\"/privacidad\">privacy policy</a>. Who is behind this website, in the <a href=\"/aviso-legal\">legal notice</a>.",
+  "lg.nav.ayuda": "Help"
  },
  no: {
   "lg.volver": "← Tilbake til Activala",
@@ -356,7 +359,8 @@ const I18N = {
   "ck.borrar.li3": "Eller bruk et privat vindu: når du lukker det, er ingenting igjen.",
   "ck.borrar.p2": "Sletter du det, fungerer nettsiden akkurat som før. Den vil bare spørre deg om språk igjen, og vi slutter å telle deg som gjentatt besøk.",
   "ck.mas.h": "Mer informasjon",
-  "ck.mas.p": "Hva vi gjør med opplysningene du faktisk gir oss, står i <a href=\"/privacidad\">personvernerklæringen</a>. Hvem som står bak denne nettsiden, i <a href=\"/aviso-legal\">den juridiske informasjonen</a>."
+  "ck.mas.p": "Hva vi gjør med opplysningene du faktisk gir oss, står i <a href=\"/privacidad\">personvernerklæringen</a>. Hvem som står bak denne nettsiden, i <a href=\"/aviso-legal\">den juridiske informasjonen</a>.",
+  "lg.nav.ayuda": "Hjelp"
  },
  sv: {
   "lg.volver": "← Tillbaka till Activala",
@@ -444,7 +448,8 @@ const I18N = {
   "ck.borrar.li3": "Eller använd ett privat fönster: när du stänger det finns inget kvar.",
   "ck.borrar.p2": "Raderar du det fortsätter webbplatsen att fungera som vanligt. Den frågar bara om språket igen, och vi slutar räkna dig som ett återkommande besök.",
   "ck.mas.h": "Mer information",
-  "ck.mas.p": "Vad vi gör med de uppgifter du faktiskt lämnar står i <a href=\"/privacidad\">integritetspolicyn</a>. Vem som står bakom denna webbplats, i den <a href=\"/aviso-legal\">juridiska informationen</a>."
+  "ck.mas.p": "Vad vi gör med de uppgifter du faktiskt lämnar står i <a href=\"/privacidad\">integritetspolicyn</a>. Vem som står bakom denna webbplats, i den <a href=\"/aviso-legal\">juridiska informationen</a>.",
+  "lg.nav.ayuda": "Hjälp"
  }
 };
 

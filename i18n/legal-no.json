@@ -6,7 +6,6 @@
   "lg.nav.ck": "Cookies",
   "lg.pie": "© 2026 Activala® · Aktiv utleie sør på Gran Canaria",
   "lg.fecha": "Sist oppdatert: august 2026",
-
   "pr.title": "Personvernerklæring — Activala®",
   "pr.meta": "Activalas personvernerklæring: hvilke opplysninger vi samler inn når du kontakter oss, hva de brukes til, og hvordan du bruker rettighetene dine.",
   "pr.h1": "Personvernerklæring",
@@ -26,7 +25,6 @@
   "pr.der.h": "Dine rettigheter",
   "pr.der.p": "Du kan når som helst be oss om innsyn, retting, sletting, å protestere, begrensning og dataportabilitet, på WhatsApp eller e-post. Vi svarer deg og sletter det du ber om uten å stille spørsmål. Mener du at vi har gjort noe feil, kan du klage til Agencia Española de Protección de Datos (det spanske datatilsynet, aepd.es).",
   "pr.aviso": "Denne nettsiden bruker verken sporingscookies eller tredjeparts analyseverktøy. Vi fører bare vår egen, anonyme telling av besøk (en tilfeldig identifikator lagret i nettleseren din, uten navn, e-post eller IP), som forteller oss hvor mange som er innom og fra hvilket land. Alt er forklart i detalj på <a href=\"/cookies\">cookie-siden</a>.",
-
   "al.title": "Juridisk informasjon — Activala®",
   "al.meta": "Activalas juridiske informasjon: hvem som står bak denne nettsiden, hva tjenesten er, og vilkår for bruk.",
   "al.h1": "Juridisk informasjon",
@@ -56,7 +54,6 @@
   "al.ley.p": "Disse vilkårene reguleres av <strong>spansk lov</strong>. Ved uenighet ligger kompetansen hos de domstolene som følger av forbrukerlovgivningen.",
   "al.datos.h": "Hvordan vi behandler opplysningene dine",
   "al.datos.p": "Alt er forklart i <a href=\"/privacidad\">personvernerklæringen</a>, og det vi lagrer i nettleseren din, på <a href=\"/cookies\">cookie-siden</a>.",
-
   "ck.title": "Cookies og lagring — Activala®",
   "ck.meta": "Hva Activala lagrer i nettleseren din: språket du velger og en tilfeldig identifikator for å telle besøk. Ingen reklame og ingen tredjeparts sporing.",
   "ck.h1": "Cookies og lagring",
@@ -87,5 +84,6 @@
   "ck.borrar.li3": "Eller bruk et privat vindu: når du lukker det, er ingenting igjen.",
   "ck.borrar.p2": "Sletter du det, fungerer nettsiden akkurat som før. Den vil bare spørre deg om språk igjen, og vi slutter å telle deg som gjentatt besøk.",
   "ck.mas.h": "Mer informasjon",
-  "ck.mas.p": "Hva vi gjør med opplysningene du faktisk gir oss, står i <a href=\"/privacidad\">personvernerklæringen</a>. Hvem som står bak denne nettsiden, i <a href=\"/aviso-legal\">den juridiske informasjonen</a>."
+  "ck.mas.p": "Hva vi gjør med opplysningene du faktisk gir oss, står i <a href=\"/privacidad\">personvernerklæringen</a>. Hvem som står bak denne nettsiden, i <a href=\"/aviso-legal\">den juridiske informasjonen</a>.",
+  "lg.nav.ayuda": "Hjelp"
 }
