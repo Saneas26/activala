@@ -16,13 +16,20 @@ import json, pathlib, re, sys
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 IDIOMAS = ['de', 'en', 'no', 'sv']          # el español es la raíz
-PAGINAS = ['index.html', 'activar.html', 'alquilar.html']
-RUTA = {'index.html': '', 'activar.html': 'activar', 'alquilar.html': 'alquilar'}
+PAGINAS = ['index.html', 'activar.html', 'alquilar.html', 'ayuda.html']
+RUTA = {'index.html': '', 'activar.html': 'activar',
+        'alquilar.html': 'alquilar', 'ayuda.html': 'ayuda'}
 BASE = 'https://activala.es'
 
 dic = {'es': json.load(open(RAIZ / 'i18n/i18n-fuente-es.json', encoding='utf-8'))}
 for l in IDIOMAS:
     dic[l] = json.load(open(RAIZ / f'i18n/i18n-{l}.json', encoding='utf-8'))
+
+# Las claves de /ayuda viven en su propio fichero (solo las carga esa página):
+# aquí se fusionan para poder traducirla igual que las demás.
+dic['es'].update(json.load(open(RAIZ / 'i18n/ayuda-fuente-es.json', encoding='utf-8')))
+for l in IDIOMAS:
+    dic[l].update(json.load(open(RAIZ / f'i18n/ayuda-{l}.json', encoding='utf-8')))
 
 # Los <title> y las <meta description> van aparte: no son traducción del
 # español, son lo que la gente teclea de verdad en Google en cada país.
@@ -124,6 +131,7 @@ def enlaces(html, lang):
     html = html.replace('href="/alquilar.html"', f'href="/{lang}/alquilar"')
     html = re.sub(r'href="/activar"', f'href="/{lang}/activar"', html)
     html = re.sub(r'href="/alquilar"', f'href="/{lang}/alquilar"', html)
+    html = html.replace('href="/ayuda"', f'href="/{lang}/ayuda"')
     # el logo vuelve a la portada del idioma
     html = html.replace('<a class="logo" href="/">', f'<a class="logo" href="/{lang}/">')
     html = html.replace('class="logo" href="/"', f'class="logo" href="/{lang}/"')
@@ -168,6 +176,8 @@ def main():
             html = selector(html, lang, pagina)
             # el motor de i18n ya no hace falta: el HTML llega traducido
             html = html.replace('<script src="/js/i18n.js"></script>',
+                                '<script src="/js/idioma-guardado.js"></script>')
+            html = html.replace('<script src="/js/ayuda-i18n.js"></script>',
                                 '<script src="/js/idioma-guardado.js"></script>')
             destino = carpeta / pagina
             destino.write_text(html, encoding='utf-8')
